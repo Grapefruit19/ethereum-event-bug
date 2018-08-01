@@ -6,7 +6,7 @@ When events across multiple contracts are called (i.e., ParentContract calls the
 
 This bug occurs with versions of truffle greater than 4.1.3, up to and including 4.1.13. 
 
-This bug occurs with the current version of Geth (as well as older versions) and the current version of Quorum. It does not occur with ganache-cli, which makes me suspect it's an issue with Geth (which Quorum is a fork of). Particularly, I believe it's an issue with solc, though I don't have any proof of that. 
+This bug occurs with the current version of Geth (as well as older versions) and the current version of Quorum. It does not occur with ganache-cli, which makes me suspect it's an issue with Geth (which Quorum is a fork of). In particular, I believe it's an issue with solc, as the jump from 4.1.3 to 4.1.4 updates solc from 0.4.19 to 0.4.21.
 
 # Steps to Reproduce
 
